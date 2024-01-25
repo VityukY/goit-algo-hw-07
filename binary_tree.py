@@ -83,7 +83,7 @@ def get_min(root):
 
 def get_max(root):
     if root.right:
-        return get_min(root.right)
+        return get_max(root.right)
     else:
         return root.val
 
